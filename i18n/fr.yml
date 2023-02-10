@@ -1,0 +1,7 @@
+expertises:
+  all: Toutes les expertises
+  discover: Découvrez l’expertise
+  discover_persons: Nos experts en {{ .Title }}
+  title:
+    one: Expertise
+    other: Expertises
