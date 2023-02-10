@@ -4,7 +4,7 @@
     "@type": "Specialty",
     "name": {{ .Title | plainify | safeHTML }},
     {{ with .Description }}
-      "description": {{ partial "TruncateContent" (dict "content" .) }},
+      "description": {{ partial "func/TruncateContent" (dict "content" .) }},
     {{ end }}
     "url": {{ .Permalink }}
   }
