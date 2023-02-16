@@ -1,7 +1,9 @@
 expertises:
   all: All expertises
+  latest: Latest expertises
   discover: Discover the expertise
   discover_persons: Our {{ .Title }} experts
+  more: Discover more expertises
   title:
     one: Expertise
     other: Expertises
