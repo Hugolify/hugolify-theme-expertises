@@ -4,12 +4,6 @@
 
 {{ define "main" }}
   {{ partial "expertises/schema" . }}
-
   {{ partial "blocks/list" . }}
-  
-  <div class="container">
-    {{ partial "expertises/heading" . }}
-    {{ partial "expertises/paginator" . }}
-  </div>
-
+  {{ partial "expertises/container" . }}
 {{ end }}

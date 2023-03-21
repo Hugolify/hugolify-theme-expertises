@@ -1,3 +1,5 @@
-{{ $paginator := .Paginator.Pages }}
-{{ partial "expertises/items" $paginator }}
-{{ partial "nav/pagination.html" . }}
+{{ $atf := true }}
+{{ if partial "func/HasImageHero" . }}
+  {{ $atf = false }}
+{{ end }}
+{{ partial "tags/items" (dict "pages" .Pages.ByTitle "abovethefold" $atf) }}
