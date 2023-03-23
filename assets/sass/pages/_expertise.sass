@@ -1,5 +1,7 @@
 .term-expertises
-
+    .hero-content
+        @extend .col-md-8
+        @extend .col-xl-7
     .expertise-persons
         @include rfs(calc(#{$global-spacing} * 2), margin-top)
 
@@ -8,6 +10,7 @@
             >
                 .expertise-persons
                     grid-column: 1/13
+                    grid-row: 3
                     
     @include media-breakpoint-down(md)
         .grid
