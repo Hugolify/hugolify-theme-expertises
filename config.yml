@@ -21,6 +21,6 @@ params:
 
 # Default
 permalinks:
-  tags: /expertises/:slug/
+  expertises: /expertises/:slug/
 taxonomies:
   expertise: expertises
