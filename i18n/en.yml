@@ -2,7 +2,12 @@ expertises:
   all: All expertises
   latest: Latest expertises
   discover: Discover the expertise
-  discover_persons: Our {{ .Title }}’s  experts
+  discover_persons:
+    one: Our {{ .Title }}’s  expert
+    other: Our {{ .Title }}’s  experts
+  persons:
+    one: Our expert
+    other: Our experts
   more: Discover more expertises
   title:
     one: Expertise

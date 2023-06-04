@@ -2,7 +2,12 @@ expertises:
   all: Toutes les expertises
   latest: Dernières expertises
   discover: Découvrez l’expertise
-  discover_persons: Nos experts en {{ .Title }}
+  discover_persons:
+    one: Notre expert en {{ .Title }}
+    other: Nos experts en {{ .Title }}
+  persons:
+    one: Notre expert
+    other: Nos experts
   more: Découvrir plus d’expertises
   title:
     one: Expertise
