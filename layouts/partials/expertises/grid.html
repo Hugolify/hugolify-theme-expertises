@@ -2,9 +2,5 @@
   {{ partial "expertises/heading-single" . }}
   {{ partial "expertises/content" . }}
   {{ partial "expertises/sidebar" . }}
-  {{ $persons := "expertises/persons.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $persons ) }}
-    {{ partial $persons . }}
-  {{ end }}
   {{ partial "expertises/related-content" . }}
 </div>
