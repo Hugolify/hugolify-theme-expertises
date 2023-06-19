@@ -12,7 +12,7 @@
         --bs-aspect-ratio: 43%
     a
         @extend .stretched-link
-    .cta
+    .btn
         @extend .btn-link
         @extend .btn-sm
         margin-left: calc(var(--bs-btn-padding-x) * -1)
@@ -24,5 +24,5 @@
                 transition: transform $transition-duration $transition-effect
     
     @media (prefers-reduced-motion: no-preference)
-        a:hover .cta::after
+        a:hover .btn::after
             transform: translateX(.5rem)
