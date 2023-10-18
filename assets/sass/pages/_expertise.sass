@@ -2,9 +2,21 @@
     .hero-content
         @extend .col-md-8
         @extend .col-xl-7
+
+    .container + *
+        @include margin-top($global-spacing-double)
     .expertise-persons,
     .latest
-        @include margin-top($global-spacing-double)
+        @include padding-bottom($global-spacing)
+        @include padding-top($global-spacing)
+        background-color: $light
+    .container + .expertise-persons,
+    .container + .latest 
+        @include padding-top($global-spacing-double)
+    .expertise-persons:last-child,
+    .latest:last-child
+        @include padding-bottom($global-spacing-double)
+        @include margin-bottom(- $global-spacing-double)
 
     @include media-breakpoint-up(md)
         .grid
