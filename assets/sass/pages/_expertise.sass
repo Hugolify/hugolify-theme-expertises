@@ -19,22 +19,23 @@
         @include margin-bottom(- $global-spacing-double)
 
     @include media-breakpoint-up(md)
-        .grid
-            >
-                *
-                    grid-row: unset
-                .expertise-persons,
-                .latest
-                    grid-column: 1/13
+        .grid >
+            .content,
+            .toc
+                grid-row: 2/4
+            .sidebar + .toc
+                grid-row: 3/6
+            .expertise-persons,
+            .latest
+                grid-column: 1/13
                     
     @include media-breakpoint-down(md)
-        .grid
-            >
-                .expertise-persons
-                    order: 5
-                .latest
-                    order: 6
-                .sidebar
-                    margin-bottom: $spacer
-                    margin-top: 0
-                    order: 2
+        .grid >
+            .expertise-persons
+                order: 5
+            .latest
+                order: 6
+            .sidebar
+                margin-bottom: $spacer
+                margin-top: 0
+                order: 2
