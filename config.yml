@@ -12,15 +12,15 @@ module:
 params:
   expertises:
     thumbnail:
-      desktop: "414x177"
-      mobile: "300x129"
-      scrollsnap: "240x103"
+      desktop: '414x177'
+      mobile: '300x129'
+      scrollsnap: '240x103'
     medium:
-      desktop: "636x445"
-      mobile: "300x210"
-      scrollsnap: "240x168"
+      desktop: '636x445'
+      mobile: '300x210'
+      scrollsnap: '240x168'
     image:
-      desktop: "300x"
+      desktop: '300x'
 
 # Default
 permalinks:
