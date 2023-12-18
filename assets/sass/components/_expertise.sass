@@ -26,3 +26,16 @@
     @media (prefers-reduced-motion: no-preference)
         a:hover .btn::after
             transform: translateX(.5rem)
+
+
+    @include media-breakpoint-up(lg)
+        .expertises-large &
+            align-items: center
+            flex-direction: row
+            .content,
+            .media
+                flex-basis: 50%
+            .media
+                margin-right: calc(#{$grid-gutter-width} / 2)
+            .content
+                margin-left: calc(#{$grid-gutter-width} / 2)
