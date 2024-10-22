@@ -12,7 +12,8 @@ module:
 params:
   admin:
     collections:
-      expertises: true
+      expertises:
+        enable: true
   expertises:
     thumbnail:
       desktop: '414x177'
