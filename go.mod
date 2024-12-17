@@ -1,2 +1,2 @@
 module github.com/hugolify/hugolify-theme-expertises
-go 1.19
+go 1.21
