@@ -2,10 +2,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Specialty",
-    "name": {{ .Title | plainify | safeHTML }},
-    {{ with .Description }}
-      "description": {{ partial "func/TruncateContent" (dict "content" .) }},
-    {{ end }}
+    "name": {{ partial "func/PrepareData" .Title }},
+    {{- with .Description }}
+      "description": {{ partial "func/PrepareData" . }},
+    {{ end -}}
     "url": {{ .Permalink }}
   }
 </script>

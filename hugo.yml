@@ -9,6 +9,7 @@ module:
     - source: layouts
       target: layouts
 
+# Params
 params:
   admin:
     collections:
@@ -27,6 +28,6 @@ params:
     image:
       desktop: '300x'
 
-# Default
+# Permalinks
 permalinks:
   expertises: /expertises/:slug/
