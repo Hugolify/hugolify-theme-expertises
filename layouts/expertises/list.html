@@ -1,9 +1,9 @@
 {{ define "hero"}}
-  {{- partial "expertises/hero" . -}}
+  {{- partial "expertises/hero.html" . -}}
 {{ end }}
 
 {{ define "main" }}
-  {{ partial "expertises/schema" . }}
-  {{ partial "blocks/list" . }}
-  {{ partial "expertises/container" . }}
+  {{ partial "expertises/schema.html" . }}
+  {{ partial "blocks/list.html" . }}
+  {{ partial "expertises/container.html" . }}
 {{ end }}
