@@ -30,4 +30,8 @@ params:
 
 # Permalinks
 permalinks:
-  expertises: /expertises/:slug/
+  page:
+    expertises: /expertises/:slug/
+  section:
+    expertises: /expertises/
+
