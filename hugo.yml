@@ -17,6 +17,8 @@ params:
     collections:
       expertises:
         enable: true
+        icon:
+          sveltiacms: school
   expertises:
     thumbnail:
       desktop: '414x177'
@@ -34,6 +36,4 @@ params:
 permalinks:
   page:
     expertises: /expertises/:slug/
-  section:
-    expertises: /expertises/
 
