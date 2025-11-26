@@ -21,7 +21,12 @@ params:
           - field: isIndex
             value: false
         icon:
-          sveltiacms: school
+          bootstrap_icons: mortarboard
+          iconoir: graduation-cap
+          material_icons: school
+          material_symbols: school
+          lucide: graduation-cap
+          sveltiacms: school # legacy
   expertises:
     thumbnail:
       desktop: '414x177'
