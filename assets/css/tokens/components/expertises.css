@@ -1,0 +1,9 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* expertises.css */
+@layer tokens {
+  :root {
+    --expertises-min-width: var(--items-min-width);
+    --expertises-nav-margin-block-start: var(--items-nav-margin-block-start);
+  }
+}
