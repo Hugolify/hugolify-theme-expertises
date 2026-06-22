@@ -13,6 +13,8 @@ module:
 
 # Params
 params:
+
+  # Hugolify admin
   admin:
     collections:
       expertises:
@@ -26,19 +28,17 @@ params:
           material_icons: school
           material_symbols: school
           lucide: graduation-cap
-          sveltiacms: school # legacy
+
+  # Image
   expertises:
     thumbnail:
-      desktop: '414x177'
-      desktop_large: '526x226'
+      desktop: '418x200'
       mobile: '300x129'
       scrollsnap: '240x103'
-    medium:
-      desktop: '636x445'
-      mobile: '300x210'
-      scrollsnap: '240x168'
+      sizes: 100vw, 50vw, 33vw
     image:
-      desktop: '300x'
+      desktop: '420x'
+      sizes: 100vw, 50vw, 33vw
 
 # Permalinks
 permalinks:

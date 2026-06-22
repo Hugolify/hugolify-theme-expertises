@@ -1,0 +1,14 @@
+@layer layout {
+  .page-expertises {
+    @media (--tablet) {
+      .grid {
+        .content {
+          --grid-column: span 8;
+        }
+        .sidebar {
+          --grid-column: span 4;
+        }
+      }
+    }
+  }
+}

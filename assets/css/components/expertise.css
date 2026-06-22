@@ -1,0 +1,7 @@
+/* components/expertise.css */
+/*
+ * .expertise remaps the full --item-* API (and the inner --btn-*) onto its
+ * --expertise-* tokens, so any value can be tuned from expertise.json without
+ * touching this file.
+ * Usage: <article class="item expertise">
+ */

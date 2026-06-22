@@ -4,9 +4,20 @@
 
 Edit `config/_default/module.yaml` to install the `hugolify-theme-expertises` module:
 
+### V2
+
+```yml
+imports:
+  - path: github.com/hugolify/hugolify-theme-expertises/v2
+  - path: github.com/hugolify/hugolify-theme/v2
+```
+
+### V1
+
 ```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-expertises
+  - path: github.com/hugolify/hugolify-theme
 ```
 
 ## Documentation
