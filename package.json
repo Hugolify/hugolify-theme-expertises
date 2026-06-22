@@ -15,7 +15,9 @@
     "hugolify",
     "hugo",
     "hugo-theme",
-    "bootstrap"
+    "bootstrap",
+    "design-system",
+    "tokens"
   ],
   "license": "MIT",
   "type": "module",
