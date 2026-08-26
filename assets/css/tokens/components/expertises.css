@@ -3,7 +3,7 @@
 /* expertises.css */
 @layer tokens {
   :root {
-    --expertises-min-width: var(--items-min-width);
-    --expertises-nav-margin-block-start: var(--items-nav-margin-block-start);
+    --expertises-min-width: var(--max-width-item);
+    --expertises-nav-margin-block-start: var(--spacing-fluid-md);
   }
 }
