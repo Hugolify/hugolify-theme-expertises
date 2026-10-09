@@ -1,11 +1,11 @@
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Specialty",
-    "name": {{ partial "func/PrepareData.html" .Title }},
-    {{- with .Description }}
-      "description": {{ partial "func/PrepareData.html" . }},
-    {{ end -}}
-    "url": {{ .Permalink }}
-  }
-</script>
+{{- /* Schema.org for an expertise: a Service the organization provides — the
+       practice area of a firm, the specialty of a clinic — see
+       func/GetSchemaService.html. */ -}}
+{{- $service := partial "func/GetSchemaService.html" . -}}
+
+{{- $webpage := partial "func/GetSchemaWebPage.html" (dict
+  "page" .
+  "mainEntity" (dict "@id" (index $service "@id"))
+) -}}
+
+{{- partial "commons/jsonld.html" (slice $webpage $service) -}}
