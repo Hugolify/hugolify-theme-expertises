@@ -1,1 +1,8 @@
-{{ partial "pages/schema.html" . }}
+{{- /* Schema.org for the expertises listing, see pages/schema.html. An
+       expertise kept as a section, to nest others under it, is an expertise
+       all the same: the Service of expertises/schema-single.html. */ -}}
+{{- if gt (len .SectionsEntries) 1 -}}
+  {{- partial "expertises/schema-single.html" . -}}
+{{- else -}}
+  {{- partial "pages/schema.html" . -}}
+{{- end -}}
