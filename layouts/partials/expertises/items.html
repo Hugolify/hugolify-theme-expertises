@@ -1,5 +1,1 @@
-{{- $size := cond (site.Params.expertises.items.large | default false) "large" "small" -}}
-{{- $partial := print "expertises/items-" $size ".html" -}}
-{{ if templates.Exists (printf "partials/%s" $partial) }}
-  {{ partial $partial . }}
-{{ end }}
+{{ partial "commons/items.html" . }}
