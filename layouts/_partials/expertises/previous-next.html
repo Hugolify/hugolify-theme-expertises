@@ -1,1 +1,6 @@
-{{ partial "nav/previous-next-with-title.html" . }}
+{{- /* Rendered after the blocks, out of the grid: it needs its own container */ -}}
+{{- if or .PrevInSection .NextInSection }}
+<div class="container">
+  {{ partial "nav/previous-next-with-title.html" . }}
+</div>
+{{- end }}

@@ -1,3 +1,6 @@
+{{- /* Rendered for the body, or for the h1 when no hero carries it */ -}}
+{{- if or .Content (not (partial "func/HasHero" .)) }}
 <div class="container container-single">
   {{ partial "expertises/grid.html" . }}
 </div>
+{{- end }}
