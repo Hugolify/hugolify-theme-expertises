@@ -24,6 +24,7 @@ params:
             value: false
         icon:
           bootstrap_icons: mortarboard
+          hugeicons: Mortarboard01
           iconoir: graduation-cap
           material_icons: school
           material_symbols: school
